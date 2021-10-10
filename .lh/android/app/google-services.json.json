@@ -1,0 +1,22 @@
+{
+    "sourceFile": "android/app/google-services.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1628780728441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628796758351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,34 +1,34 @@\n {\n   \"project_info\": {\n-    \"project_number\": \"631651260878\",\n-    \"project_id\": \"flash-chat-ae0ed\",\n-    \"storage_bucket\": \"flash-chat-ae0ed.appspot.com\"\n+    \"project_number\": \"249890343578\",\n+    \"project_id\": \"flash-chat-2d7fc\",\n+    \"storage_bucket\": \"flash-chat-2d7fc.appspot.com\"\n   },\n   \"client\": [\n     {\n       \"client_info\": {\n-        \"mobilesdk_app_id\": \"1:631651260878:android:1346d3a108f822e3ad339f\",\n+        \"mobilesdk_app_id\": \"1:249890343578:android:e28da4bb4a2d833b46ed23\",\n         \"android_client_info\": {\n-          \"package_name\": \"he5yo.flash_chat\"\n+          \"package_name\": \"co.ahmedhe5yo.flash_chat\"\n         }\n       },\n       \"oauth_client\": [\n         {\n-          \"client_id\": \"631651260878-rn9d3r3m980ekj4blojf3s6edp2q07rb.apps.googleusercontent.com\",\n+          \"client_id\": \"249890343578-72pc8gns3ql58bd1kh2p9leang86sp7a.apps.googleusercontent.com\",\n           \"client_type\": 3\n         }\n       ],\n       \"api_key\": [\n         {\n-          \"current_key\": \"AIzaSyA6V5y3qWG9Ros2DS4MeSxTSi2lmet-_JM\"\n+          \"current_key\": \"AIzaSyDvMFAmWTJ-gNSYezRykHPHp3adaV1tr9c\"\n         }\n       ],\n       \"services\": {\n         \"appinvite_service\": {\n           \"other_platform_oauth_client\": [\n             {\n-              \"client_id\": \"631651260878-rn9d3r3m980ekj4blojf3s6edp2q07rb.apps.googleusercontent.com\",\n+              \"client_id\": \"249890343578-72pc8gns3ql58bd1kh2p9leang86sp7a.apps.googleusercontent.com\",\n               \"client_type\": 3\n             }\n           ]\n         }\n"
+                }
+            ],
+            "date": 1628780728441,
+            "name": "Commit-0",
+            "content": "{\n  \"project_info\": {\n    \"project_number\": \"631651260878\",\n    \"project_id\": \"flash-chat-ae0ed\",\n    \"storage_bucket\": \"flash-chat-ae0ed.appspot.com\"\n  },\n  \"client\": [\n    {\n      \"client_info\": {\n        \"mobilesdk_app_id\": \"1:631651260878:android:1346d3a108f822e3ad339f\",\n        \"android_client_info\": {\n          \"package_name\": \"he5yo.flash_chat\"\n        }\n      },\n      \"oauth_client\": [\n        {\n          \"client_id\": \"631651260878-rn9d3r3m980ekj4blojf3s6edp2q07rb.apps.googleusercontent.com\",\n          \"client_type\": 3\n        }\n      ],\n      \"api_key\": [\n        {\n          \"current_key\": \"AIzaSyA6V5y3qWG9Ros2DS4MeSxTSi2lmet-_JM\"\n        }\n      ],\n      \"services\": {\n        \"appinvite_service\": {\n          \"other_platform_oauth_client\": [\n            {\n              \"client_id\": \"631651260878-rn9d3r3m980ekj4blojf3s6edp2q07rb.apps.googleusercontent.com\",\n              \"client_type\": 3\n            }\n          ]\n        }\n      }\n    }\n  ],\n  \"configuration_version\": \"1\"\n}"
+        }
+    ]
+}

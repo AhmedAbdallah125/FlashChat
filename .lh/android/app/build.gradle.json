@@ -1,0 +1,38 @@
+{
+    "sourceFile": "android/app/build.gradle",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1628434409876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628605746324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,10 @@\n         minSdkVersion 16\r\n         targetSdkVersion 30\r\n         versionCode flutterVersionCode.toInteger()\r\n         versionName flutterVersionName\r\n+        multiDexEnabled true\r\n+\r\n     }\r\n \r\n     buildTypes {\r\n         release {\r\n"
+                },
+                {
+                    "date": 1628796477551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,15 +28,16 @@\n \r\n android {\r\n     compileSdkVersion 30\r\n \r\n+\r\n     sourceSets {\r\n         main.java.srcDirs += 'src/main/kotlin'\r\n     }\r\n \r\n     defaultConfig {\r\n         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).\r\n-        applicationId \"he5yo.flash_chat\"\r\n+        applicationId \"co.ahmedhe5yo.flash_chat\"\r\n         minSdkVersion 16\r\n         targetSdkVersion 30\r\n         versionCode flutterVersionCode.toInteger()\r\n         versionName flutterVersionName\r\n"
+                },
+                {
+                    "date": 1628796885929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n \r\n dependencies {\r\n     implementation \"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version\"\r\n     // Import the Firebase BoM\r\n-    implementation platform('com.google.firebase:firebase-bom:28.3.0')\r\n+    implementation platform('com.google.firebase:firebase-bom:28.3.1')\r\n     // Add the dependency for the Firebase SDK for Google Analytics\r\n   // When using the BoM, don't specify versions in Firebase dependencies\r\n     implementation 'com.google.firebase:firebase-analytics-ktx'\r\n \r\n"
+                },
+                {
+                    "date": 1628796997147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \r\n     defaultConfig {\r\n         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).\r\n         applicationId \"co.ahmedhe5yo.flash_chat\"\r\n-        minSdkVersion 16\r\n+        minSdkVersion 21\r\n         targetSdkVersion 30\r\n         versionCode flutterVersionCode.toInteger()\r\n         versionName flutterVersionName\r\n         multiDexEnabled true\r\n"
+                },
+                {
+                    "date": 1628797015370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,10 @@\n     source '../..'\r\n }\r\n \r\n dependencies {\r\n+    implementation 'com.android.support:multidex:1.0.3'\r\n+\r\n     implementation \"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version\"\r\n     // Import the Firebase BoM\r\n     implementation platform('com.google.firebase:firebase-bom:28.3.1')\r\n     // Add the dependency for the Firebase SDK for Google Analytics\r\n"
+                }
+            ],
+            "date": 1628434409876,
+            "name": "Commit-0",
+            "content": "def localProperties = new Properties()\r\ndef localPropertiesFile = rootProject.file('local.properties')\r\nif (localPropertiesFile.exists()) {\r\n    localPropertiesFile.withReader('UTF-8') { reader ->\r\n        localProperties.load(reader)\r\n    }\r\n}\r\n\r\ndef flutterRoot = localProperties.getProperty('flutter.sdk')\r\nif (flutterRoot == null) {\r\n    throw new GradleException(\"Flutter SDK not found. Define location with flutter.sdk in the local.properties file.\")\r\n}\r\n\r\ndef flutterVersionCode = localProperties.getProperty('flutter.versionCode')\r\nif (flutterVersionCode == null) {\r\n    flutterVersionCode = '1'\r\n}\r\n\r\ndef flutterVersionName = localProperties.getProperty('flutter.versionName')\r\nif (flutterVersionName == null) {\r\n    flutterVersionName = '1.0'\r\n}\r\n\r\napply plugin: 'com.android.application'\r\napply plugin: 'com.google.gms.google-services'\r\napply plugin: 'kotlin-android'\r\napply from: \"$flutterRoot/packages/flutter_tools/gradle/flutter.gradle\"\r\n\r\nandroid {\r\n    compileSdkVersion 30\r\n\r\n    sourceSets {\r\n        main.java.srcDirs += 'src/main/kotlin'\r\n    }\r\n\r\n    defaultConfig {\r\n        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).\r\n        applicationId \"he5yo.flash_chat\"\r\n        minSdkVersion 16\r\n        targetSdkVersion 30\r\n        versionCode flutterVersionCode.toInteger()\r\n        versionName flutterVersionName\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            // TODO: Add your own signing config for the release build.\r\n            // Signing with the debug keys for now, so `flutter run --release` works.\r\n            signingConfig signingConfigs.debug\r\n        }\r\n    }\r\n}\r\n\r\nflutter {\r\n    source '../..'\r\n}\r\n\r\ndependencies {\r\n    implementation \"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version\"\r\n    // Import the Firebase BoM\r\n    implementation platform('com.google.firebase:firebase-bom:28.3.0')\r\n    // Add the dependency for the Firebase SDK for Google Analytics\r\n  // When using the BoM, don't specify versions in Firebase dependencies\r\n    implementation 'com.google.firebase:firebase-analytics-ktx'\r\n\r\n\r\n  // Add the dependencies for any other desired Firebase products\r\n  // https://firebase.google.com/docs/android/setup#available-libraries\r\n\r\n}\r\n"
+        }
+    ]
+}

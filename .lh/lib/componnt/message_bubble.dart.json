@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/componnt/message_bubble.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1633528892948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1633528892947,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass MessageBubble extends StatelessWidget {\r\n  // provide text and sender\r\n  // make them final to be intialize once at conxtructor\r\n  final String mText, mSender;\r\n  MessageBubble({this.mText, this.mSender});\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    // to change background of text\r\n    // wrap it in material\r\n    return Column(\r\n      mainAxisAlignment: MainAxisAlignment.start,\r\n      crossAxisAlignment: CrossAxisAlignment.end,\r\n      children: [\r\n        Text(\r\n          mSender,\r\n          style: TextStyle(\r\n              fontSize: 12,\r\n              // color to make it little lighter\r\n              color: Colors.black54),\r\n        ),\r\n        Padding(\r\n            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),\r\n            child: Material(\r\n                elevation: 5,\r\n                borderRadius: BorderRadius.circular(30),\r\n                color: Colors.lightBlue,\r\n                child: Padding(\r\n                  padding: EdgeInsets.all(10),\r\n                  child: Text(\r\n                    mText,\r\n                    style: TextStyle(fontSize: 20, color: Colors.white),\r\n                  ),\r\n                ))),\r\n      ],\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

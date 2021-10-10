@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/constants.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1628428749906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628430354736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,16 +10,16 @@\n   contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),\n   hintText: 'Type your message here...',\n   border: InputBorder.none,\n );\n-\n+// make constant decoration\n const kMessageContainerDecoration = BoxDecoration(\n   border: Border(\n     top: BorderSide(color: Colors.lightBlueAccent, width: 2.0),\n   ),\n );\n const KTextFieldDecoration = InputDecoration(\n-  hintText: 'Enter your password',\n+  hintText: 'Enter your value........',\n   contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),\n   border: OutlineInputBorder(\n     borderRadius: BorderRadius.all(Radius.circular(32.0)),\n   ),\n"
+                }
+            ],
+            "date": 1628428749906,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nconst kSendButtonTextStyle = TextStyle(\n  color: Colors.lightBlueAccent,\n  fontWeight: FontWeight.bold,\n  fontSize: 18.0,\n);\n\nconst kMessageTextFieldDecoration = InputDecoration(\n  contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),\n  hintText: 'Type your message here...',\n  border: InputBorder.none,\n);\n\nconst kMessageContainerDecoration = BoxDecoration(\n  border: Border(\n    top: BorderSide(color: Colors.lightBlueAccent, width: 2.0),\n  ),\n);\nconst KTextFieldDecoration = InputDecoration(\n  hintText: 'Enter your password',\n  contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),\n  border: OutlineInputBorder(\n    borderRadius: BorderRadius.all(Radius.circular(32.0)),\n  ),\n  enabledBorder: OutlineInputBorder(\n    borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),\n    borderRadius: BorderRadius.all(Radius.circular(32.0)),\n  ),\n  focusedBorder: OutlineInputBorder(\n    borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),\n    borderRadius: BorderRadius.all(Radius.circular(32.0)),\n  ),\n);\n"
+        }
+    ]
+}

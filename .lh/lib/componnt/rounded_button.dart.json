@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/componnt/rounded_button.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1628423061965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628430766211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,12 @@\n           //   Navigator.pushNamed(context, RegistrationScreen.id);\r\n           // },\r\n           minWidth: 200.0,\r\n           height: 42.0,\r\n-          child: Text(title),\r\n+          child: Text(\r\n+            title,\r\n+            style: TextStyle(color: Colors.white),\r\n+          ),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                }
+            ],
+            "date": 1628423061965,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass RoundedButton extends StatelessWidget {\r\n  final Color color;\r\n  final String title;\r\n  final Function onpressed;\r\n\r\n  const RoundedButton(\r\n      {Key key,\r\n      @required this.color,\r\n      @required this.title,\r\n      @required this.onpressed})\r\n      : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Padding(\r\n      padding: EdgeInsets.symmetric(vertical: 16.0),\r\n      child: Material(\r\n        color: color,\r\n        // Colors.blueAccent,\r\n        borderRadius: BorderRadius.circular(30.0),\r\n        elevation: 5.0,\r\n        child: MaterialButton(\r\n          onPressed: onpressed,\r\n          // onPressed: () {\r\n          //   //Go to registration screen.\r\n          //   Navigator.pushNamed(context, RegistrationScreen.id);\r\n          // },\r\n          minWidth: 200.0,\r\n          height: 42.0,\r\n          child: Text(title),\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}
